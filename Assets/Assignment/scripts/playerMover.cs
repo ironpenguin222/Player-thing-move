@@ -44,7 +44,7 @@ public class playerMover : MonoBehaviour
     {
         Vector2 directionToDash = new Vector2(direction.x, direction.y);
 
-        rb.velocity = new Vector2(directionToDash.x * dashDist, directionToDash.y * dashDist);
+        rb.velocity = new Vector2(directionToDash.x * dashDist, directionToDash.y * dashDist+2);
         dashes -= 1;
     }
 
